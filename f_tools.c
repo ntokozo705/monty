@@ -1,4 +1,5 @@
 #include "monty.h"
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 
 /**
@@ -99,7 +100,7 @@ void find_the_func(char *opcode, char *value, int ln, int format)
 		{"pchar", print_char},
 		{"pstr", print_str},
 		{"rotl", rotl},
-		{"rotr", rotr},
+		/*{"rotr", rotr},*/
 		{NULL, NULL}
 	};
 
